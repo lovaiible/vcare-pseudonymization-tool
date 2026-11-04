@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Vcare Pseudonymisierungstool</title><link rel="icon" type="image/png" sizes="48x48" href="/favicon.png"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self'; connect-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self'; font-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'"><script type="module" src="/src/app.js"></script></head>
+<body>
+
+<main>
+<h1>Vcare Pseudonymisierungstool</h1>
+<div class="model-loader" id="model-loader">
+  <div class="model-loader-label"><span id="model-status" role="status" aria-live="polite">Sprachmodell wird vorbereitet …</span><button id="retry-model" class="text-button" type="button" hidden>Erneut versuchen</button></div>
+  <progress id="model-progress" max="100" aria-labelledby="model-status"></progress>
+</div>
+<aside class="review-guide" aria-label="Prüfhinweise"><strong>Manuelle Prüfung erforderlich</strong><p>Namen, Kontaktdaten, Kennnummern und indirekt identifizierende Angaben prüfen. Pseudonymisierung garantiert keine Anonymität. Gesundheitsangaben bleiben sensibel.</p></aside>
+<ol class="steps" aria-label="Arbeitsschritte"><li class="current" id="step1"><span>01</span> Anfrage vorbereiten</li><li id="step2"><span>02</span> Fassung prüfen</li><li id="step3"><span>03</span> Freigeben & herunterladen</li></ol>
+<div id="status" class="status" role="status" aria-live="polite"><span id="action-status"></span></div>
+<div class="workspace">
+<section class="panel input-panel" aria-labelledby="input-title"><div class="panel-heading"><div><h2 id="input-title">Originaltext</h2></div><span class="tag">Nur lokal</span></div>
+
+<label class="sr-only" for="source">Originalanfrage</label><textarea id="source" autocomplete="off" spellcheck="false" placeholder="Originaltext hier einfügen (maximal 20.000 Zeichen)."></textarea>
+<div class="editor-footer"><span id="source-count">0 Zeichen</span><button id="demo" class="text-button" type="button">Fiktives Beispiel einsetzen</button></div>
+
+<div class="panel-actions"><p class="hint">Namen, Kontaktdaten, Orte, Einrichtungen, Datums- und Altersangaben erkennen und ersetzen.</p><button id="prepare" class="primary" disabled>Angaben erkennen <span aria-hidden="true">→</span></button><button id="cancel" class="secondary" type="button" hidden>Verarbeitung abbrechen</button></div>
+</section>
+<section class="panel output-panel" aria-labelledby="output-title"><div class="panel-heading"><div><h2 id="output-title">Pseudonymisierter Entwurf</h2></div><span class="tag" id="review-state">Noch kein Entwurf</span></div>
+<div id="empty-output" class="empty-output"><p>Noch kein Entwurf. Originaltext eingeben und „Angaben erkennen“ starten.</p></div>
+<div id="result" hidden><label for="draft" class="sr-only">Pseudonymisierter Entwurf</label><textarea id="draft" autocomplete="off" spellcheck="false"></textarea><div class="findings"><span id="findings-total"></span><div id="counts"></div></div><p class="hint">Bitte überprüfen und übersehene Ersetzungen ergänzen oder unpassende Treffer korrigieren</p></div>
+<div class="review-box"><label class="check"><input id="reviewed" type="checkbox" disabled><span>Ich habe die gesamte Fassung geprüft und nur notwendige Angaben belassen.</span></label><div class="review-actions"><button id="approve" class="secondary" disabled>Fassung freigeben</button><button id="download" class="primary" disabled>Herunterladen <span aria-hidden="true">↓</span></button></div></div>
+</section>
+</div>
+<div class="session-row"><p>Original und Zuordnung bleiben nur im Arbeitsspeicher dieses Tabs. Beim Verlassen oder Leeren wird die Sitzung verworfen. Der Download enthält ausschließlich die freigegebene Fassung.</p><button type="button" id="clear" class="text-button">Sitzung leeren & neu beginnen</button></div>
+
+</main></body></html>

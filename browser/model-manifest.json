@@ -1,0 +1,36 @@
+{
+  "model": "Xenova/bert-base-multilingual-cased-ner-hrl",
+  "revision": "263e82c06569c8c2ac46238a7ae5107598934234",
+  "files": [
+    {
+      "path": "config.json",
+      "sha256": "7aa891abae067f95a40f5e2005b3de44824a083f256802934a993d301ec25076",
+      "bytes": 1207
+    },
+    {
+      "path": "tokenizer.json",
+      "sha256": "bf1b59b7b11c95f194f51708d918eea378e09d05f84c0e1656dc5180e8117088",
+      "bytes": 2919362
+    },
+    {
+      "path": "tokenizer_config.json",
+      "sha256": "e6f3b96db926a37d4039995fbf5ad17de158dfb8f6343d607e4dbaad18d75f5a",
+      "bytes": 367
+    },
+    {
+      "path": "special_tokens_map.json",
+      "sha256": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+      "bytes": 125
+    },
+    {
+      "path": "README.md",
+      "sha256": "538f5fa0a885326b02b365cc8aa34906b68ba425e78625c164c7e7973d112664",
+      "bytes": 1147
+    },
+    {
+      "path": "onnx/model_quantized.onnx",
+      "sha256": "5b65139844be260b624a2a13782b01d122e613d64ce16ed0ba4d82e0b816f1a9",
+      "bytes": 178495423
+    }
+  ]
+}
