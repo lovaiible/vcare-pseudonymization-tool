@@ -1,0 +1,6 @@
+{
+  "identifier_fields": {
+    "/patient/id": "PATIENTENNUMMER",
+    "/insurance_number": "VERSICHERTENNUMMER"
+  }
+}

@@ -1,0 +1,22 @@
+[
+ {"id":"baseline","marked":"⟦PERSON|Jutta Müller⟧ wohnt in ⟦LOCATION|Berlin⟧. Sie arbeitet bei ⟦ORGANIZATION|Siemens⟧. Sie hat Asthma und nimmt Salbutamol.","clinical":["Asthma","Salbutamol"]},
+ {"id":"contacts","marked":"Kontakt: ⟦EMAIL|jutta@example.org⟧, ⟦PHONE|+49 30 12345678⟧. Termin: ⟦DATE|23.10.2026⟧. Patienten-ID: ⟦IDENTIFIER|VC-1234⟧.","clinical":[]},
+ {"id":"umlauts","marked":"Frau ⟦PERSON|Özlem Yılmaz⟧ bittet um Hilfe. Herr ⟦PERSON|Jürgen Weiß⟧ hat Diabetes und erhält Metformin.","clinical":["Diabetes","Metformin"]},
+ {"id":"address","marked":"Adresse: ⟦ADDRESS|Musterstraße 12, 10115 Berlin⟧. Sie ist ⟦AGE|76 Jahre alt⟧. IBAN: ⟦IBAN|DE89 3704 0044 0532 0130 00⟧.","clinical":[]},
+ {"id":"postal-city-first","marked":"Wohnort: ⟦LOCATION|Berlin⟧ (⟦POSTAL_CODE|10115⟧). PLZ: ⟦POSTAL_CODE|01067⟧.","clinical":[]},
+ {"id":"postal-code-first","marked":"Wohnort: ⟦LOCATION|01067 Dresden⟧.","clinical":[]},
+ {"id":"signature-en","marked":"Ich habe Asthma und nehme Salbutamol.\n\nBest regards\n⟦PERSON|Jutta Müller⟧","clinical":["Asthma","Salbutamol"]},
+ {"id":"signature-de","marked":"Bitte um Beratung.\nMit freundlichen Grüßen\n⟦PERSON|Dr. Jürgen von der Müller⟧\n⟦EMAIL|kontakt@example.org⟧","clinical":[]},
+ {"id":"repeated","marked":"⟦PERSON|Anna Schmidt⟧ lebt in ⟦LOCATION|Hamburg⟧. ⟦PERSON|Anna Schmidt⟧ fragt nach Unterstützung. Kontakt: ⟦EMAIL|anna@example.org⟧ und ⟦EMAIL|anna@example.org⟧.","clinical":[]},
+ {"id":"institutions","marked":"Die Behandlung erfolgt an der ⟦ORGANIZATION|Charité⟧ in ⟦LOCATION|Berlin⟧. ⟦PERSON|Thomas Weber⟧ hat COPD.","clinical":["COPD"]},
+ {"id":"ambiguous","marked":"⟦PERSON|Frank Sommer⟧ meldet sich aus ⟦LOCATION|Essen⟧. Essen und Trinken fallen ihm schwer.","clinical":["Essen und Trinken fallen ihm schwer"]},
+ {"id":"clinical-only","marked":"Diagnosen: Parkinson, Alzheimer und Diabetes mellitus Typ 2. Medikamente: Metformin 500 mg, Ramipril 5 mg. Blutdruck 120/80 mmHg, Gewicht 72,5 kg.","clinical":["Parkinson","Alzheimer","Diabetes mellitus Typ 2","Metformin 500 mg","Ramipril 5 mg","120/80 mmHg","72,5 kg"]},
+ {"id":"emoji","marked":"🙂 ⟦PERSON|Jutta Müller⟧ lebt in ⟦LOCATION|München⟧. Sie nimmt Salbutamol.","clinical":["Salbutamol"]},
+ {"id":"dates-ids","marked":"Geboren am ⟦DATE|3. März 1950⟧. Versicherungsnummer: ⟦IDENTIFIER|A123456789⟧. Aktenzeichen: ⟦IDENTIFIER|XY/2026-12⟧. Termin ⟦DATE|2026-11-03⟧.","clinical":[]},
+ {"id":"signature-inline","marked":"Viele Grüße, ⟦PERSON|Anna-Lena Weiß⟧","clinical":[]},
+ {"id":"initials","marked":"Kind regards\n⟦PERSON|J. Müller⟧","clinical":[]},
+ {"id":"organizations","marked":"⟦PERSON|Maria Hoffmann⟧ arbeitet bei ⟦ORGANIZATION|Volkswagen⟧ in ⟦LOCATION|Wolfsburg⟧.","clinical":[]},
+ {"id":"clinical-negation","marked":"Kein Hinweis auf Asthma. Keine Einnahme von Salbutamol. Sauerstoffsättigung 98 %, Temperatur 37,2 °C.","clinical":["Kein Hinweis auf Asthma","Keine Einnahme von Salbutamol","98 %","37,2 °C"]},
+ {"id":"long-boundaries","marked":"⟦PERSON|Jutta Müller⟧ lebt in ⟦LOCATION|Berlin⟧. ","repeatPrefix":"Die Beratung betrifft die häusliche Pflege und die Versorgung. ","repeatCount":90,"suffix":" Am Ende schreibt ⟦PERSON|Anna Schmidt⟧ aus ⟦LOCATION|Hamburg⟧.\nBest regards\n⟦PERSON|Jürgen Weiß⟧","clinical":["häusliche Pflege"]},
+ {"id":"phone-other","marked":"Telefon: ⟦PHONE|0049 30 12345678⟧. Rückruf: ⟦PHONE|030 / 12345678⟧.","clinical":[]}
+]

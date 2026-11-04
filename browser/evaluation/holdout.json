@@ -1,0 +1,8 @@
+[
+ {"id":"vietnamese-name","marked":"⟦PERSON|Nguyễn Thị Hồng⟧ lebt in ⟦LOCATION|München⟧ und fragt nach Unterstützung bei der Pflege ihrer Mutter.","clinical":[]},
+ {"id":"vietnamese-relative","marked":"Die Tochter ⟦PERSON|Đặng Thị Lan⟧ kümmert sich um ihren Vater ⟦PERSON|Trần Văn Minh⟧. Er hat Diabetes.","clinical":["Diabetes"]},
+ {"id":"lowercase-signature","marked":"Ich brauche Beratung.\nViele Grüße\n⟦PERSON|anna schmidt⟧","clinical":[]},
+ {"id":"compound-clinic","marked":"⟦PERSON|Sabine Keller⟧ wird im ⟦ORGANIZATION|Universitätsklinikum Hamburg-Eppendorf⟧ behandelt. Sie hat eine Herzinsuffizienz.","clinical":["Herzinsuffizienz"]},
+ {"id":"clinical-person-eponyms","marked":"Es besteht ein Verdacht auf Morbus Crohn. Der Vater hat Morbus Basedow. Sie nimmt L-Thyroxin und Ibuprofen.","clinical":["Morbus Crohn","Morbus Basedow","L-Thyroxin","Ibuprofen"]},
+ {"id":"free-name-particles","marked":"⟦PERSON|Anna-Lena von der Heide⟧ wohnt in ⟦LOCATION|Bad Homburg⟧ und erhält häusliche Pflege.","clinical":["häusliche Pflege"]}
+]

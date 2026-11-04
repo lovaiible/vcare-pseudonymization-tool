@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vcare-request-pseudonymizer"
+version = "0.1.0"
+requires-python = ">=3.12,<3.13"
+dependencies = ["presidio-analyzer>=2.2.360,<3", "spacy>=3.8,<3.9"]
+
+[project.scripts]
+vcare-pseudonymize-ui = "vcare_pseudonymizer.server:main"
+vcare-pseudonymize = "vcare_pseudonymizer.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["vcare_pseudonymizer*"]
+
+[tool.setuptools.package-data]
+vcare_pseudonymizer = ["web/*.html", "web/*.css", "web/*.js", "web/*.png", "web/fonts/*.woff2", "web/fonts/OFL.txt"]

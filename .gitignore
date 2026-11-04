@@ -1,0 +1,57 @@
+# Local environment configuration; keep placeholder examples tracked.
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Credentials and secret material.
+secrets/
+credentials/
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Dependencies and virtual environments.
+node_modules/
+.venv/
+venv/
+
+# Caches and generated output.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+coverage/
+.coverage
+htmlcov/
+dist/
+build/
+target/
+*.egg-info/
+
+# Logs and local operating-system files.
+*.log
+logs/
+.DS_Store
+Thumbs.db
+
+
+# Standalone tool
+# Local sensitive workspaces and conventional local data directories.
+workspaces/
+inputs/
+exports/
+
+# Browser build assets and synthetic evaluation output; setup regenerates these.
+browser/public/models/
+browser/public/runtime/
+browser/public/licences/transformers.txt
+browser/evaluation/results/
+browser/public/fonts/
+browser/public/favicon.png
+dist-qa/
+
+.vite/
